@@ -25,14 +25,38 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "cs/CompArch/OS/Process managment.md",
+                "file": "cs/languages/rust/basis/Iterators.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "474c52959b8cec29",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "cs/languages/c++/basis/move semantics/Move semantics.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "3216c3562386b43e",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "cs/CompArch/OS/relocation sections.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -98,7 +122,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "cs/CompArch/OS/Process managment.md",
+                "file": "cs/CompArch/OS/relocation sections.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +139,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "cs/CompArch/OS/Process managment.md",
+                "file": "cs/CompArch/OS/relocation sections.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +162,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "cs/CompArch/OS/Process managment.md"
+                "file": "cs/CompArch/OS/relocation sections.md"
               }
             }
           }
@@ -161,13 +185,21 @@
       "omnisearch:Omnisearch": false
     }
   },
-  "active": "8b1a483ad48d1cab",
+  "active": "3216c3562386b43e",
   "lastOpenFiles": [
+    "cs/CompArch/OS/Allocators.md",
+    "cs/CompArch/OS/relocation sections.md",
+    "cs/CompArch/what is CPU?.md",
+    "cs/Compiler fundamentals/symbol table.md",
+    "cs/languages/c++/basis/move semantics/Move semantics.md",
+    "cs/languages/rust/basis/closure types.md",
+    "cs/CompArch/Virtual memory (VM).md",
+    "cs/CompArch/OS/Process managment.md",
+    "math/Group Theory/algorithms/DFS.md",
+    "math/Group Theory/algorithms",
     "cs/pictures/relationship between processes.png",
     "cs/CompArch/OS/Scheduling.md",
-    "cs/CompArch/OS/Process managment.md",
     "cs/pictures/process_descriptor.png",
-    "cs/CompArch/OS/Allocators.md",
     "cs/pictures/task_list.png",
     "cs/languages/c++/basis/move semantics/Value categories.md",
     "cs/languages/c++/basis/move semantics/value-category-cheatsheet.pdf",
@@ -176,8 +208,6 @@
     "cs/CompArch/How transistors run code?.md",
     "cs/CompArch/System bus.md",
     "cs/CompArch/Registers.md",
-    "cs/CompArch/Virtual memory (VM).md",
-    "cs/CompArch/what is CPU?.md",
     "cs/Concurrency/Threads.md",
     "math/Graph Theory/10. Паросочетания и Инварианты.md",
     "math/Graph Theory/4. Маршруты, цепи и циклы.md",
@@ -191,10 +221,6 @@
     "cs/pictures/trap handling.png",
     "cs/pictures/exception table.png",
     "cs/pictures/anatomy of an exception.png",
-    "cs/CompArch/OS/Linux virtual memory system.md",
-    "cs/languages/rust/basis/Option<T> &&  Result<T> enums.md",
-    "cs/languages/rust/basis/Traits.md",
-    "cs/languages/rust/basis/Static && Dynamic dispatch && vtables.md",
     "cs/pictures/concurrent thread execution.png",
     "cs/Concurrency",
     "cs/languages/rust/async",
@@ -206,8 +232,6 @@
     "math/Linear Algebra",
     "cs/pictures/Diagram2.png",
     "cs/pictures/Diagram2.svg",
-    "cs/pictures/Diagram2.svg.xml",
-    "cs/Compiler fundamentals/phases/Untitled Diagram.svg",
-    "cs/pictures"
+    "cs/pictures/Diagram2.svg.xml"
   ]
 }

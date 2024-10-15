@@ -1,0 +1,231 @@
+\section{Линейные, билинейные и полуторалинейные формы в Евклидовом пространстве}
+
+Пусть $ f: \mathbb{V} \to E  \quad f(\alpha x + \beta y) = \alpha f(x) + \beta f(y)$
+
+\begin{shlem}
+    \begin{lemma} (О скалярном произведении)
+    \leavevmode \nl
+    
+    Пусть $ \mathbb{V} - \text{ это } E \text{ или } U, \quad \forall y \in \mathbb{V} \quad \inner{x_{1}}{y} = \inner{x_{2}}{y} \quad \lra x_{1} = x_{2}$
+    \end{lemma}
+\end{shlem}
+
+\begin{proof}
+    \leavevmode \nl 
+    
+    $ \forall y \quad \inner{x_{1}}{y} = \inner{x_{2}}{y} \; \lra \; \inner{x_{1} - x_{2}}{y} = 0$
+    
+    $ \text{ Пусть } y = x_{1} - x_{2} \; \lra \; \inner{x_{1} - x_{2}}{x_{1} - x_{2}} = 0 \; \lra \; x_{1} - x_{2} = 0 \; \lra \; x_{1} = x_{2}$
+\end{proof}
+
+\vspace{0.4cm}
+
+\begin{shth}
+    \begin{theorem} (Теорема Рисcа о линейном функционале)
+        
+        $ \text{ Пусть } \mathbb{V} - \text{ это } E, \quad f - \text{ это линейный функционал из } E^* \; \lra \nl 
+        \lra \; \exists ! \; h \in E : f(x) = \inner{x}{h}$
+    \end{theorem}
+\end{shth}
+
+\begin{proof}
+    \leavevmode \nl 
+    
+    $$ \mathcal{E} = \{ e_{1}, \ldots, e_{n} \} - \text{ ОНБ в } E, \quad x = \xi_{1} e_{1} + \ldots + \xi_{n} e_{n}, \quad \forall x \in E$$
+    
+    
+    $$f(x) = \xi_{1} f(e_{1}) + \ldots + \xi_{n} f(e_{n})$$
+    
+    
+    $$ \mu_{1} = f(e_{1}), \; \ldots \;, \mu_{n} = f(e_{n}), \quad h = \mu_{1} e_{1} + \ldots + \mu_{n} e_{n}$$
+    
+    
+    $$ \lra \; \xi_{1} \mu_{1} + \ldots + \xi_{n} \mu_{n} = \inner{x}{h}$$
+    
+    
+    $$ \text{ теперь покажем, что вектор $h$ единственен. Пойдём от противного.} $$
+    
+
+    $$ \text{ Пусть } \exists h_{1}, h_{2} \in E \; \lra \; f(x) = \inner{x}{h_{1}}, \; f(x) = \inner{x}{h_{2}} \quad \lra \inner{x}{h_{1}} = \inner{x}{h_{2}} \; \nl \forall x \in E$$
+    
+    
+    $$ \lra \text{ По лемме } h_{1} = h_{2}$$
+\end{proof}
+
+\clearpage
+
+\begin{shth}
+    \begin{theorem} (Теорема типа Рисса о представлении билинейной формы \nl в евклидовом пространстве)
+        
+        $ \text{ Пусть $f(x, y)$ - билинейная форма в $E$}$
+        
+        $\quad \lra \exists ! \; \phi \in \alpha(E, E) : f(x, y) = \inner{x}{\phi(y)}$
+        
+    \end{thorem}
+\end{shth}
+
+\begin{proof}
+\leavevmode \nl 
+
+    \begin{enumerate}
+        \item 
+        
+        $$ \text{ фиксируем } y \in E, \; f(x,y) \in E^*$$
+        
+        $$ \text{ По теореме Рисса } \exists ! \; h_{y} : f(x,y) = \inner{x}{h_{y}} $$
+        
+        $$\phi: E \to E : \; \phi(y) = h_{y}, \; y_{1} \to h_{y_{1}}, \ldots , y_{n} \to h_{y_{n}}$$
+        
+        $$f(x, y_{1} + y_{2}) = f(x, y_{1}) + f(x, y_{2}) = \inner{x}{\phi(y_{1})} + \inner{x}{\phi(y_{2})}$$
+        
+        $$\text{ так как } \phi(y_{1} + y_{2}) = \phi(y_{1}) \; +  \; \phi(y_{2}) \; \lra \; f(x, \alpha y) = \alpha f(x, y) = \alpha \inner{x}{h_{y}} = \alpha \inner{x}{\phi(y)}$$
+        
+        $$\inner{x}{\phi(\alpha y)} \leftrightarrow \inner{x}{\alpha \phi(y)}. \text{ По лемме } \pgu(\alpha y) = \alpha \phi(y)$$
+
+        $$ \lra \exists \phi \in \alpha(E, E) : f(x, y) = f(x, \phi(y))$$
+        
+        
+        \item 
+
+        $$\text{ Докажем единственность } \phi \text{ от противного. Пусть } \quad
+\begin{align}
+f(x, y) &= \inner{x}{\phi_{1}(y)} \\
+f(x, y) &= \inner{x}{\phi_{2}(y)} \end{align}}
+ \quad \forall x \in E$$
+        
+        $$\text{ По лемме } \phi_{1}(y) = \phi_{2}(y) \; \lra \phi_{1} = \phi_{2}$$
+        
+        \item 
+        
+        $$\text{ если } \mathbb{V} = U, \text{ то } g(x,y) - \text{ квадратичная форма}$$
+        
+        $$\lra \exists ! \; \phi \in \alpha(U, U) : g(x, y) = \inner{x}{\phi(y)} \text{ и } \exists ! \; \psi \in \alpha(U, U) : \; g(x, y) = \inner{\psi(x)}{y}$$
+    \end{enumerate}
+\end{proof}
+
+
+\clearpage
+
+\chapter{Линейные операторы в $E$ и $U$}
+
+\section{Сопряжённые операторы}
+
+$ \text{ Пусть $\mathbb{V}$ - это $E$ или $U$}, \; \phi \in \alpha(\mathbb{V}, \mathbb{V})$
+
+\begin{shdef}
+    \begin{definition}
+    \leavevmode \nl 
+    
+        $ \phi^* \text{ называется сопряжённым оператором к $\phi$, если } \forall x, y \in \mathbb{V} \ \ \inner{\phi(x)}{y} = \inner{x}{\phi^* (y)}$
+    \end{definition}
+\end{shdef}
+
+\begin{shth}
+    \begin{theorem}
+        $ \forall \phi \in \alpha(\mathbb{V}, \mathbb{V}) \quad \exists ! \; \phi^* : \phi^* \in \alpha(\mathbb{V}, \mathbb{V}) $
+    \end{theorem}
+\end{shth}
+
+\begin{proof}
+    \leavevmode \nl 
+    
+    $$\inner{\phi(x)}{y} - \text{ полуторалинейная форма }$$
+    
+    $$\text{ По теореме Рисса } \inner{\phi(x)}{y} = \inner{x}{\psi(y)}$$
+
+    $$\text{ По определению } \psi = \phi^* \in \alpha(\mathbb{V}, \mathbb{V}). \text{ Пусть есть 2 сопряжённых оператора } \phi_{1}^*, \phi_{2}^*$$
+    
+    $$\inner{\phi(x)}{y} = \inner{x}{\phi_{1}(y)^*}, \quad \inner{\phi(x)}{y} = \inner{x}{\phi_{2}(y)^*}$$
+    
+    $$\lra \inner{x}{\phi_{1}(y)^*} = \inner{x}{\phi_{2}(y)^*} \text{ (По лемме $\phi_{1}^* = \phi_{2}^*$)} $$
+\end{proof}
+
+\clearpage
+
+\begin{shdef}
+    Свойства $\phi^*$:
+    \begin{enumerate}
+        \item $ I^* = I$
+        \item $(\alpha \phi + \mu \psi)^* = 
+        \begin{cases}
+            \alpha \phi^* + \mu \psi^* & \text{в } E \\
+            \overline{\alpha} \phi^* + \overline{\mu} \psi^* & \text{в } U
+        \end{cases}$
+        \item $ (\phi^*)^* = \phi$
+        \item $ (\phi \psi)^* = \psi^* \phi^*$
+        \item $\text{ если } \exists \phi^{-1} \in \alpha(\mathbb{V}, \mathbb{V}), \; \text{ то } \; \exists (\phi^*)^{-1}, \; (\phi^*)^{-1} = (\phi^{-1})^*$
+        \item $ \text{ если } \mathcal{E} - \text{ ОНБ, то } A^{\phi}_{\phi^*} = 
+        \begin{cases}
+            A^{e^T}_{\phi} \text{ в } E \\
+            (A^{e}_{\phi})^* \text{ в } U
+        \end{cases}$
+    \end{enumerate}
+\end{shdef}
+
+\begin{proof}
+    \leavevmode \nl 
+    
+        \begin{enumerate}
+        \item 
+        
+        $$\inner{I x}{y} = \inner{x}{y} = \inner{x}{I y} \lra I^* = I$$
+        \item 
+        
+        $$ \text{ Докажем для } E: \quad $ $ \inner{(\lambda \phi + \mu \psi) (x)}{y} = \inner{\lambda \phi(x) + \mu \psi(x)}{y} = \lambda \inner{\phi(x)}{y} + \mu \inner{\psi(x)}{y} = $$
+        
+$$ = \lambda \inner{x}{\phi(y)^*} + \mu \inner{x}{\psi(y)^*} = \inner{x}{\lambda \phi(y)^*} + \inner{x}{\mu \psi(y)^*} = \inner{x}{\lambda \phi(y)^* + \mu \psi(y)^*}.$$
+
+$$\lra \; \text{ По лемме } (\lambda \phi + \mu \psi)^* = \lambda \phi^* + \mu \psi^* $$
+
+        \item
+        $$\text{ Докажем для } U:$$
+        $$\inner{\phi(x)}{y} = \inner{x}{\phi(y)^*} = \overline{\inner{\phi(y)^*}{x}} = \overline{\inner{y}{(\phi(x)^*})^*} = $$
+        
+        $$= \inner{(\phi(x)^*)^*}{y} \; \lra \; \phi = (\phi^*)^* \text{ по лемме }$$
+        
+       \item
+       $$\inner{\phi \psi(x)}{y} = \inner{\psi(x)}{\phi(y)^*} = \inner{x}{(\phi \psi)^* (y)} = \inner{x}{\psi^* \phi(y)^*}$$
+       
+       $$\lra \text{ по лемме } (\phi \psi)^* = \psi^* \phi^* \; \forall x \in \mathbb{V}$$
+       
+       \item
+       $$\exists \phi^{-1} : \phi^{-1} \phi = \phi \phi^{-1} = I$$
+
+       $$(\phi^{-1} \phi)^* = (\phi \phi^{-1})^* = I^* = I \quad \lra \phi^* (\phi^{-1})^* = \phi^* \psi = (\phi^{-1})^* \phi^* = \psi \phi^* = I$$
+
+       $$\lra \psi^* \psi = \psi \psi^* = I$$
+       
+       \item
+       Пусть \(\mathcal{E}\) — ОНБ. Обозначим матрицу оператора \(\phi\) в базисе \(\mathcal{E}\) как \(A^{e}_{\phi} = (a_{ij})\), а матрицу оператора \(\phi^*\) в том же базисе как \(A^{e}_{\phi^*} = (b_{ij})\).
+
+\begin{enumerate}
+    \item \textbf{Случай 1:} Базис \(\mathcal{E}\) — ОНБ в пространстве \(E\).
+    
+    В этом случае, матрица \(A^{e}_{\phi^*}\) оператора \(\phi^*\) в базисе \(\mathcal{E}\) совпадает \nl
+с транспонированной матрицей \(A^{e}_{\phi}\):
+    
+    \[
+    A^{e}_{\phi^*} = (A^{e}_{\phi})^T
+    \]
+    
+    Это следует из определения сопряженного оператора в \nl 
+ортонормированном базисе.
+    
+    \item \textbf{Случай 2:} Базис \(\mathcal{E}\) — ОНБ в пространстве \(U\).
+    
+    В этом случае, матрица \(A^{e}_{\phi^*}\) оператора \(\phi^*\) в базисе \(\mathcal{E}\) совпадает с матрицей \((A^{e}_{\phi})^*\):
+    
+    \[
+    A^{e}_{\phi^*} = (A^{e}_{\phi})^*
+    \]
+    
+    Это также следует из определения сопряженного оператора в \nl
+ортонормированном базисе, но с учетом комплексного сопряжения и \nl 
+транспонирования.
+\end{enumerate}
+
+    \end{enumerate}
+\end{proof}
+
+
+
