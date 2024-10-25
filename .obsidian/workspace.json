@@ -8,15 +8,17 @@
         "type": "tabs",
         "children": [
           {
-            "id": "3216c3562386b43e",
+            "id": "15224affbf8c25b7",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "cs/CompArch/OS/Scheduling.md",
+                "file": "cs/CompArch/Processor Architecture.md",
                 "mode": "source",
                 "source": false
-              }
+              },
+              "icon": "lucide-file",
+              "title": "Processor Architecture"
             }
           }
         ]
@@ -39,7 +41,9 @@
               "type": "file-explorer",
               "state": {
                 "sortOrder": "alphabetical"
-              }
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Файловый менеджер"
             }
           },
           {
@@ -54,7 +58,9 @@
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical"
-              }
+              },
+              "icon": "lucide-search",
+              "title": "Поиск"
             }
           },
           {
@@ -62,7 +68,9 @@
             "type": "leaf",
             "state": {
               "type": "bookmarks",
-              "state": {}
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Закладки"
             }
           }
         ]
@@ -85,7 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "cs/CompArch/OS/Scheduling.md",
+                "file": "math/Group Theory/algorithms/DFS.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -93,7 +101,9 @@
                 "searchQuery": "",
                 "backlinkCollapsed": false,
                 "unlinkedCollapsed": true
-              }
+              },
+              "icon": "links-coming-in",
+              "title": "Обратные ссылки для DFS"
             }
           },
           {
@@ -102,10 +112,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "cs/CompArch/OS/Scheduling.md",
+                "file": "math/Group Theory/algorithms/DFS.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
-              }
+              },
+              "icon": "links-going-out",
+              "title": "Исходящие ссылки из DFS"
             }
           },
           {
@@ -116,7 +128,9 @@
               "state": {
                 "sortOrder": "frequency",
                 "useHierarchy": true
-              }
+              },
+              "icon": "lucide-tags",
+              "title": "Теги"
             }
           },
           {
@@ -125,8 +139,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "cs/CompArch/OS/Scheduling.md"
-              }
+                "file": "math/Group Theory/algorithms/DFS.md"
+              },
+              "icon": "lucide-list",
+              "title": "Структура DFS"
             }
           }
         ]
@@ -148,26 +164,28 @@
       "omnisearch:Omnisearch": false
     }
   },
-  "active": "3216c3562386b43e",
+  "active": "15224affbf8c25b7",
   "lastOpenFiles": [
+    "Без названия 1",
+    "Без названия",
+    "math/Graph Theory/algorithms/DFS.md",
+    "cs/CompArch/Processor Architecture.md",
+    "cs/CompArch/OS/Scheduling.md",
     "cs/CompArch/OS/Process managment.md",
     "cs/CompArch/OS/Linux virtual memory system.md",
-    "cs/CompArch/OS/Scheduling.md",
-    "Pasted image 20241017040933.png",
+    "cs/pictures/Pasted image 20241017040933.png",
     "cs/pictures/Screenshot From 2024-10-17 04-04-57_upscayl_5x_realesrgan-x4plus.png",
     "cs/pictures/Screenshot From 2024-10-17 03-55-03_upscayl_5x_realesrgan-x4plus.png",
     "cs/pictures/Pasted image 20240823035622.png",
     "cs/pictures/Pasted image 20240817184114.png",
     "cs/CompArch/Virtual memory (VM).md",
-    "Без названия.md",
     "cs/CompArch/OS/relocation sections.md",
     "cs/CompArch/OS/Allocators.md",
     "cs/CompArch/what is CPU?.md",
     "cs/Compiler fundamentals/symbol table.md",
     "cs/languages/c++/basis/move semantics/Move semantics.md",
     "cs/languages/rust/basis/closure types.md",
-    "math/Group Theory/algorithms/DFS.md",
-    "math/Group Theory/algorithms",
+    "math/Graph Theory/algorithms",
     "cs/pictures/relationship between processes.png",
     "cs/pictures/process_descriptor.png",
     "cs/pictures/task_list.png",
@@ -193,7 +211,6 @@
     "cs/cryptography",
     "math/formal languages",
     "math/Linear Algebra/linalg_master.tex",
-    "math/Linear Algebra",
-    "cs/pictures/Diagram2.svg.xml"
+    "math/Linear Algebra"
   ]
 }

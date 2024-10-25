@@ -1077,6 +1077,7 @@ Sfp
 SRa
 Su
 SGB
+Set
 EN
 Eb
 EDD
@@ -3940,6 +3941,7 @@ ACQ
 ANH
 AhK
 Active
+Architecture
 KB
 Kn
 KH
