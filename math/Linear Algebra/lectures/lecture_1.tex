@@ -185,18 +185,16 @@ $g: V \times V \to \mathbb{C}$, \newline удовлетворяющая след
     \newline
     
     \vspace{0.3cm}
-    Пусть $K -$ это $E$ или $V$, \quad $x,y \in K$, \quad тогда $\| \langle x,y \rangle\| \; \leq \; \|x\| \cdot \|y\|$
+    Пусть $K -$ это $E$ или $U$, \quad $x,y \in K$, \quad тогда $\| \langle x,y \rangle\| \; \leq \; \|x\| \cdot \|y\|$
 \end{theorem}
 \end{shth}
 
 \vspace{0.2cm}
 \begin{proof}
-
-
-
     \begin{enumerate}
+    \leavevmode \nl
+    
         \item 
-        
         $\textbf{Для Евклидова пространства} \; E:$ \; $\forall x, y \in E, \quad \forall \alpha \in \mathbb{R}$
         
         $$0 \; \leq \; \langle x \; - \; \alpha y, x \; - \; \alpha y \rangle \; = \; \langle x, x \rangle \; - \; \alpha \langle y, x \rangle \; - \; \alpha \langle x, y \rangle \; + \; \alpha^2 \langle y, y \rangle \; = \; \|x\|^2 \; - \; 2 \alpha \langle x, y \rangle \; + \; \alpha^2 \|y\|^2 \; \geq \; 0$$
@@ -210,7 +208,7 @@ $g: V \times V \to \mathbb{C}$, \newline удовлетворяющая след
         
         $$\Longrightarrow \quad |\langle x, y \rangle| \leq \|x\| \|y\|$$
         
-    \item \textbf{Для унитарного пространства \( V \):} \quad $\forall x, y \in V, \quad \forall \alpha, \beta \in \mathbb{C}$.
+    \item \textbf{Для унитарного пространства \( U \):} \quad $\forall x, y \in U, \quad \forall \alpha, \beta \in \mathbb{C}$.
         
         $$0 \; \leq \; \langle \alpha x \; + \; \beta y, \alpha x \; + \; \beta y \rangle \; = \; \alpha \overline{\alpha} \langle x, x \rangle \; + \; \alpha \overline{\beta} \langle x, y \rangle \; + \; \beta \overline{\alpha} \langle y, x \rangle \; + \; \beta \overline{\beta} \langle y, y \rangle \; =$$
         
@@ -270,7 +268,7 @@ $g: V \times V \to \mathbb{C}$, \newline удовлетворяющая след
         \|x + y\| \leq \|x\| + \|y\|
         \]
         
-        \item \textbf{Для унитарного пространства \( V \):} \quad \(\forall x, y \in V\)
+        \item \textbf{Для унитарного пространства \( U \):} \quad \(\forall x, y \in U\)
         
         \[
         \|x + y\|^2 = \langle x + y, x + y \rangle = \langle x, x \rangle + \langle x, y \rangle + \langle y, x \rangle + \langle y, y \rangle
@@ -307,7 +305,7 @@ $g: V \times V \to \mathbb{C}$, \newline удовлетворяющая след
 \begin{shdef}
 \begin{definition}
     \leavevmode \newline
-    Пусть $\mathbb{V}$ — это $E$ или $V$, и $\mathbb{E} = \{e_1, \ldots, e_n\}$ — базис в $\mathbb{V}$. \newline
+    Пусть $\mathbb{V}$ — это $E$ или $U$, и $\mathbb{E} = \{e_1, \ldots, e_n\}$ — базис в $\mathbb{V}$. \newline
     Матрицей Грама называется матрица $G$, элементы которой определяются как:
     \[
     G_{ij} = (\langle e_i, e_j \rangle),
