@@ -154,6 +154,22 @@
   {.5em} % Space after theorem head
   {} % Theorem head spec (can be left empty, meaning `normal')
 
+% Определение цвета для фрейма следствия
+\definecolor{corcolor}{HTML}{FFE4E1} % Светло-розовый
+
+% Определение стиля для следствия
+\newtheoremstyle{mycorstyle}
+  {3pt} % Space above
+  {3pt} % Space below
+  {} % Body font
+  {} % Indent amount
+  {\bfseries} % Theorem head font
+  {.} % Punctuation after theorem head
+  {.5em} % Space after theorem head
+  {} % Theorem head spec (can be left empty, meaning `normal')
+
+
+
 % Применение стилей
 \theoremstyle{mythmstyle}
 \newtheorem{theorem}{Теорема}
@@ -172,6 +188,9 @@
 
 \theoremstyle{mylemstyle}
 \newtheorem{lemma}{Лемма}
+
+\theoremstyle{mycorstyle}
+\newtheorem{corollary}{Следствие}
 
 
 \newcommand{\norm}[1]{\|#1\|}
@@ -204,6 +223,11 @@
 
 \newenvironment{shlem}
   {\def\FrameCommand{\fboxsep=\FrameSep \fcolorbox{black}{lemcolor}}\MakeFramed {\FrameRestore}}
+  {\endMakeFramed}
+  
+
+\newenvironment{shcor}
+  {\def\FrameCommand{\fboxsep=\FrameSep \fcolorbox{black}{corcolor}}\MakeFramed {\FrameRestore}}
   {\endMakeFramed}
 
 \theoremstyle{plain}
