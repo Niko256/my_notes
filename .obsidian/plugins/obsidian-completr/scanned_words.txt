@@ -383,6 +383,7 @@ ePQ
 eea
 edBs
 expired
+explicit
 UTF
 Unallocated
 Uncached
@@ -1909,6 +1910,7 @@ lfh
 lad
 lgk
 lhj
+long
 mxGraphModel
 mxCell
 memory
@@ -2069,6 +2071,7 @@ mhx
 mYH
 mFh
 mXF
+modes
 gt
 gnome
 gJ
@@ -4389,6 +4392,7 @@ IbF
 IWp
 IpP
 IKFF
+Instructions
 Time
 Thu
 TTTp
@@ -4915,6 +4919,9 @@ bfc
 bch
 bla
 bbH
+bit
+bits
+breakpoints
 GG
 GT
 GbB
@@ -5039,6 +5046,7 @@ Gjw
 GYT
 GHH
 GORp
+Git
 ZU
 Zu
 ZX
@@ -5974,6 +5982,7 @@ OAq
 OpP
 OHa
 OlI
+Operation
 WIDAT
 WH
 Write
@@ -6817,6 +6826,7 @@ oEBjg
 oDd
 oFD
 oKB
+opcodes
 Byte
 Buffer
 Bit
