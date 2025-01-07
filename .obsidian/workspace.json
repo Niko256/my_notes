@@ -4,40 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "b65b9cb6d08703fc",
+        "id": "3388253b915df616",
         "type": "tabs",
-        "dimension": 78.3132530120482,
         "children": [
           {
-            "id": "15224affbf8c25b7",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "cs/languages/rust/basis/match && pattern matching.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "match && pattern matching"
-            }
-          },
-          {
-            "id": "97cd1d9eea4fcc30",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "cs/CompArch/Processor Architecture.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Processor Architecture"
-            }
-          },
-          {
-            "id": "a5e37b977d452002",
+            "id": "4917f57533c10093",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -48,29 +19,7 @@
               },
               "icon": "lucide-file",
               "title": "Caching"
-            },
-            "group": "e2e2332ae8070bb9"
-          }
-        ],
-        "currentTab": 2
-      },
-      {
-        "id": "8d29623e80e5b787",
-        "type": "tabs",
-        "dimension": 21.686746987951807,
-        "children": [
-          {
-            "id": "9c0ac107cf4e5273",
-            "type": "leaf",
-            "state": {
-              "type": "outline",
-              "state": {
-                "file": "cs/CompArch/Caching.md"
-              },
-              "icon": "lucide-list",
-              "title": "Структура Caching"
-            },
-            "group": "e2e2332ae8070bb9"
+            }
           }
         ]
       }
@@ -128,8 +77,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "477540a5ef11ae72",
@@ -216,8 +164,10 @@
       "omnisearch:Omnisearch": false
     }
   },
-  "active": "9c0ac107cf4e5273",
+  "active": "4917f57533c10093",
   "lastOpenFiles": [
+    "Физика.md",
+    "cs/CompArch/Caching.md",
     "cs/CompArch/Caching 1.md",
     "cs/CompArch/Control flow.md",
     "cs/CompArch/Heap and chunks.md",
@@ -225,7 +175,6 @@
     "cs/CompArch/Registers.md",
     "cs/CompArch/Processor Architecture.md",
     "cs/CompArch/Call Stack && Stack Frames.md",
-    "cs/CompArch/Caching.md",
     "cs/CompArch/what is CPU?.md",
     "cs/CompArch/Virtual memory (VM).md",
     "cs/CompArch/System bus.md",
@@ -251,7 +200,6 @@
     "cs/pictures/Pasted image 20240817184114.png",
     "cs/CompArch/OS/relocation sections.md",
     "cs/CompArch/OS/Allocators.md",
-    "cs/Compiler fundamentals/symbol table.md",
     "math/Graph Theory/algorithms",
     "cs/pictures/relationship between processes.png",
     "cs/pictures/process_descriptor.png",

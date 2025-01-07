@@ -1,4 +1,4 @@
-\chapter{Евклидово и унитарное пространства}
+\chapter{Евклидово и унитарное пространство}
 
 \section{Билинейные формы и их свойства}
 
@@ -11,7 +11,7 @@
     \begin{definition}
         \leavevmode\newline
         
-        \textbf{Билинейной формой} на $V$ называется функция $f(x,y): V \times V \to \mathbb{R}$, для которой определены следующие аксиомы:
+        \textbf{Билинейной формой} на $V$ называется функция $f(x,y): V \times V \to \mathbb{R}$, для которой определены следующие свойства:
         \begin{enumerate}
             \item $\forall x,y,z \in V \quad \; f(x+y,z) = f(x, z) + f(y,z)$
             \item $\forall \alpha \in \R, \forall x,y \in V \quad \;  f(\alpha x, y) = \alpha f(x,y)$
@@ -52,7 +52,7 @@
     \leavevmode \newline
     
     \textbf{Полуторолинейной формой} на $V$ называется функция 
-$g: V \times V \to \mathbb{C}$, \newline удовлетворяющая следующим аксиомам:
+$g: V \times V \to \mathbb{C}$, \newline удовлетворяющая следующим свойствам:
     \begin{enumerate}
         \item $\forall x,y,z \in V \quad g(x + y,z) = g(x,z) + g(y,z)$
         \item $\forall \alpha \in \mathbb{C} \; \forall x,y \in V \quad  g(\alpha x, y) = \alpha g(x,y)$
@@ -167,11 +167,8 @@ $g: V \times V \to \mathbb{C}$, \newline удовлетворяющая след
 \textbf{Примеры норм:}
 \begin{shex}
     \begin{itemize}
-        \item Класс Гёльдоровых норм ($\|X\|_p = (|x_{1}|^p + |x_{2}|^p + \ldots |x_{n}^p|)^\frac{1}{p}$), \quad где $p \geq 1$.
-        \begin{enumerate}
             \item \textbf{Евклидова норма в $\R^n$:} $\quad \|x\| = \sqrt{\xi_{1}^2 + \ldots \xi_{n}^2} = \sqrt{\sum_{k = 1}^{n} \xi_{k}^2}$
             \item \textbf{Евклидова норма в $\mathbb{C}^n$:} $\quad \|x\| = \sqrt{|\xi_{1}|^2 + \ldots + |\xi_{n}|^2}$
-        \end{enumerate}
     \end{itemize}
 \end{shex}
 
@@ -214,12 +211,11 @@ $g: V \times V \to \mathbb{C}$, \newline удовлетворяющая след
         
         $$= |\alpha|^2 \; \|x\|^2 \; + \; \alpha \overline{\beta} \langle x, y \rangle \; + \; \beta \; \overline{\alpha} \overline{\langle x, y \rangle } \; + \; |\beta|^2 \; \|y\|^2 \qquad \Longrightarrow$$
         
-        $$\alpha := \|y\|^2 ) , \quad ( \beta := -\langle x, y \rangle$$
+        $$\alpha := \|y\|^2 , \quad  \beta := -\langle x, y \rangle$$
  
         $$\Longrightarrow \quad \|y\|^4 \; \|x\|^2 - \|y\|^2 \langle x, y \rangle \overline{\langle x, y \rangle} - \|y\|^2 \; \langle x, y \rangle \overline{\langle x, y \rangle} \; + \; |\langle x, y \rangle |^2 \; \|y\|^2 \; =$$
         
-        $$= \; \|y\|^2 \; (\|y\|^2 \; \|x\|^2 \; - \; \langle x, y \rangle \overline{\langle x, y \rangle} \; - \; \langle x,y \rangle \overline{\langle x, y \rangle} \; + \; |\langle x, y \rangle|^2) \; = \; \|y\|^2(\|x\|^2 \; \|y\|^2 - |\langle x, y \rangle|^2) \; \geq \; 0$$
-        
+        $$= \; \|y\|^2 \; (\|y\|^2 \; \|x\|^2 \; - \; \langle x, y \rangle \overline{\langle x, y \rangle} \; - \; \langle x,y \rangle \overline{\langle x, y \rangle} \; + \; |\langle x, y \rangle|^2) \; = \; \|y\|^2(\|x\|^2 \; \|y\|^2 - |\langle x, y \rangle|^2) \; \geq \; 0$$      
         
         \begin{itemize}
         
@@ -360,5 +356,3 @@ $g: V \times V \to \mathbb{C}$, \newline удовлетворяющая след
     $\Longrightarrow$ Система имеет нетривиальное решение $\Longrightarrow$ её определитель равен нулю, а это и есть $|G|.$
     \end{enumerate}
 \end{proof}
-
-\clearpage

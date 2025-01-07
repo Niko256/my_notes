@@ -25,7 +25,7 @@
      
     \item $\inner{\phi(x)}{\phi(y)} = \inner{\phi(x)^*}{\phi(y)^*}$ 
 
-    \item $\|\phi(x)\| = \|\phi(x)^*\|$ 
+    \item $\|\phi(x)\| = \|\phi^*(x)\|$ 
     
     \item $(\phi - \lambda I)$ — нормальный оператор.
     
@@ -50,89 +50,94 @@
 
         \item 
         \[
-        \| \phi(x)\| = \inner{\phi(x)}{\phi(x)} = \inner{\phi^*(x)}{\phi^*(x)} = \|\phi^*(x)\|
+        \| \phi(x)\| = \sqrt{\inner{\phi(x)}{\phi(x)}} = \sqrt{\inner{\phi^*(x)}{\phi^*(x)}} = \|\phi^*(x)\|.
         \]
 
         \item 
         \[
-        (\phi - \lambda I) (\phi - \lambda I)^* = (\phi - \lambda I)(\phi^* - \lambda I^*) = (\phi - \lambda I)(\phi^* - \lambda I) = \phi \phi^* - \lambda I \phi^* - \lambda I \phi + \lambda^2 I
+        (\phi - \lambda I)(\phi - \lambda I)^* = (\phi - \lambda I)(\phi^* - \lambda I) = \phi \phi^* - \lambda \phi^* - \lambda \phi + \lambda^2 I.
         \]
         \[
-        \lra (\phi - \lambda I)(\phi - \lambda I)^* = (\phi - \lambda I)^*(\phi - \lambda I) = (\phi^* - \lambda I)(\phi - \lambda I) = \phi^* \phi - \lambda I \phi - \lambda I \phi^* + \lambda^2 I
+        (\phi - \lambda I)^*(\phi - \lambda I) = (\phi^* - \lambda I)(\phi - \lambda I) = \phi^* \phi - \lambda \phi - \lambda \phi^* + \lambda^2 I.
         \]
         \[
-        \quad \lra 
-        \begin{cases}
-            \phi - \lambda I \text{ — Нормальный} \\
-            \phi^* - \lambda I \text{ — Нормальный}
-        \end{cases}
+        \text{Так как } \phi \phi^* = \phi^* \phi, \text{ то } (\phi - \lambda I) \text{ — нормальный оператор.}
         \]
 
         \item 
         \[
-        x - \text{собственный вектор, соответствующий } \lambda \lra \phi(x) = \lambda x \lra (\phi - \lambda I)(x) = 0
+        \text{Пусть } x \text{ — собственный вектор для } \phi, \text{ соответствующий } \lambda. \text{ Тогда:}
         \]
         \[
-        \lra \|(\phi - \lambda I)(x)\| = 0 = \|(\phi - \lambda I)^* (x)\| \lra (\phi - \lambda I)^*(x) = 0 \lra \phi^*(x) = \lambda x
-        \]
-
-        \item 
-        \[
-        \begin{cases}
-            e_{1} \sim \lambda_{1} \\
-            e_{2} \sim \lambda_{2} \\
-            \vdots & \text{ - собственные вектора для } \phi \text{ и } \phi^* \, (\lambda_{1} \neq \lambda_{2} \neq \cdots \neq \lambda_{n}) \\
-            e_{n} \sim \lambda_{n}
-        \end{cases}
+        \phi(x) = \lambda x \implies (\phi - \lambda I)(x) = 0.
         \]
         \[
-        \lambda_{1} \inner{e_{1}}{e_{2}} = \inner{\lambda_{1} e_{1}}{e_{2}} = \inner{\phi(e_{1})}{e_{2}} = \inner{e_{1}}{\phi^*(e_{2})} = \inner{e_{1}}{\lambda_{2} e_{2}} = \lambda_{2} \inner{e_{1}}{e_{2}}
-        \]
-        \[
-        \lra (\lambda_{1} - \lambda_{2}) \inner{e_{1}}{e_{2}} = 0 \lra \inner{e_{1}}{e_{2}} = 0 \quad \lra e_{1} \bot e_{2}
+        \|(\phi - \lambda I)(x)\| = 0 = \|(\phi - \lambda I)^*(x)\| \implies (\phi - \lambda I)^*(x) = 0 \implies \phi^*(x) = \lambda x.
         \]
 
         \item 
         \[
-        \text{Пусть $e$ - собственный вектор \phi \quad \lra \; $e - $ собственный вектор для $\phi^*$, при этом  $E = L(e) \oplus L(e)^{\bot}$}
+        \text{Пусть } e_1 \text{ и } e_2 \text{ — собственные вектора для } \phi, \text{ соответствующие } \lambda_1 \text{ и } \lambda_2 \text{ соответственно. Тогда:}
         \]
         \[
-        \phi(e) = \lambda e \in L(e) \lra L(e) - \text{инвариантно отсносительно $\phi$ (по свойству сопряженного оператора)}
+        \inner{\phi(e_1)}{e_2} = \inner{\lambda_1 e_1}{e_2} = \lambda_1 \inner{e_1}{e_2}.
         \]
         \[
-        \lra L^{\bot}(e) - \text{инвариантно относительно $\phi^*$}
+        \inner{e_1}{\phi^*(e_2)} = \inner{e_1}{\lambda_2 e_2} = \lambda_2 \inner{e_1}{e_2}.
         \]
         \[
-        \phi^*(e) = \lambda e \in L(e) \lra L(e) - \text{инвариантно относительно } \phi^*
+        \text{Так как } \phi \text{ — нормальный, то } \lambda_1 \inner{e_1}{e_2} = \lambda_2 \inner{e_1}{e_2} \implies (\lambda_1 - \lambda_2) \inner{e_1}{e_2} = 0.
         \]
         \[
-        \lra L^{\bot}(e) - \text{инвариантно относительно $\phi^{**} = \phi$}
-        \]
-
-        \item 
-        \[
-        \mathbb{E} - \text{ОНБ}, A_{\phi^*}^{\mathbb{E}} = (A_{\phi}^{\mathbb{E}})^T
-        \]
-        \[
-        \begin{cases}
-            \phi \phi^* \sim A_{\phi}^{\mathbb{E}} A_{\phi^*}^{\mathbb{E}} = A_{\phi}^{\mathbb{E}} (A_{\phi}^{\mathbb{E}})^T \\
-            \phi \phi^* \sim A_{e}^{\phi^*} A_{\phi}^{\mathbb{E}} = (A_{\phi}^{\mathbb{E}})^T A_{\phi}^{\mathbb{E}}
-        \end{cases}
-        \]
-        \[
-        \lra A_{\phi}^{\mathbb{E}} (A_{\phi}^{e})^T = (A_{\phi}{\mathbb{E}})^T A_{\phi}^{\mathbb{E}} \lra A_{\phi}^{\mathbb{E}} - \text{ нормальная}
+        \text{Если } \lambda_1 \neq \lambda_2, \text{ то } \inner{e_1}{e_2} = 0 \implies e_1 \perp e_2.
         \]
 
         \item 
         \[
-        \mathbb{E} - \text{ОНБ}. \quad A_{\phi}^{\mathbb{E}} (A_{\phi}^{\mathbb{E}})^T = (A_{\phi}^{\mathbb{E}})^T A_{\phi}^{\mathbb{E}}.
+        \text{Пусть } e \text{ — собственный вектор для } \phi. \text{ Тогда:}
         \]
         \[
-        \quad \text{данное равенство эквивалентно } \phi \phi^* = \phi^* \phi \lra \phi - \text{ Нормальный}
+        E = L(e) \oplus L(e)^{\bot}.
+        \]
+        \[
+        \phi(e) = \lambda e \in L(e) \implies L(e) \text{ инвариантно относительно } \phi.
+        \]
+        \[
+        \phi^*(e) = \lambda e \in L(e) \implies L(e) \text{ инвариантно относительно } \phi^*.
+        \]
+        \[
+        \text{Следовательно, } L(e)^{\bot} \text{ инвариантно относительно } \phi \text{ и } \phi^*.
+        \]
+
+        \item 
+        \[
+        \text{Пусть } \mathbb{E} \text{ — ОНБ. Тогда:}
+        \]
+        \[
+        A_{\phi^*}^{\mathbb{E}} = (A_{\phi}^{\mathbb{E}})^T.
+        \]
+        \[
+        \text{Так как } \phi \text{ — нормальный, то:}
+        \]
+        \[
+        A_{\phi}^{\mathbb{E}} (A_{\phi}^{\mathbb{E}})^T = (A_{\phi}^{\mathbb{E}})^T A_{\phi}^{\mathbb{E}}.
+        \]
+        \[
+        \text{Следовательно, } A_{\phi}^{\mathbb{E}} \text{ — нормальная матрица.}
+        \]
+
+        \item 
+        \[
+        \text{Пусть } \mathbb{E} \text{ — ОНБ. Тогда:}
+        \]
+        \[
+        A_{\phi}^{\mathbb{E}} (A_{\phi}^{\mathbb{E}})^T = (A_{\phi}^{\mathbb{E}})^T A_{\phi}^{\mathbb{E}}.
+        \]
+        \[
+        \text{Это эквивалентно } \phi \phi^* = \phi^* \phi \implies \phi \text{ — нормальный оператор.}
         \]
     \end{enumerate}
 \end{proof}
-
 \clearpage
 \section{Основные свойства самосопряжённого оператора}
 

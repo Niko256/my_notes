@@ -776,6 +776,8 @@ sPS
 sCv
 sBZ
 starvation
+sets
+set
 PUBLIC
 Paging
 PPs
@@ -942,6 +944,8 @@ PytJ
 PJt
 PmgD
 PIi
+Placement
+Policies
 SVG
 SG
 St
@@ -1464,6 +1468,7 @@ pWBO
 puH
 priorities
 processes
+per
 height
 hd
 hii
@@ -2072,6 +2077,8 @@ mYH
 mFh
 mXF
 modes
+misses
+management
 gt
 gnome
 gJ
@@ -2327,6 +2334,7 @@ rqx
 rrq
 rTp
 rKK
+replacement
 id
 ih
 iS
@@ -3022,6 +3030,9 @@ CPH
 Cds
 Cqy
 Clz
+Concepts
+Caching
+Cold
 adress
 aaHO
 aC
@@ -3232,6 +3243,7 @@ adbe
 ane
 ahe
 alz
+associative
 translation
 tables
 table
@@ -3371,6 +3383,7 @@ tsc
 tjF
 tIZ
 tQhX
+tag
 unit
 uk
 ulm
@@ -4054,6 +4067,7 @@ Kxrgd
 KPk
 KBN
 KLb
+Kinds
 frames
 faults
 fault
@@ -5489,6 +5503,7 @@ ddd
 ddDj
 dj
 dfX
+direct
 YA
 YYY
 Yz
@@ -6325,6 +6340,8 @@ HHx
 HlXXa
 HzaD
 Hmz
+Hierarchy
+Hits
 zt
 zl
 zw
@@ -6827,6 +6844,7 @@ oDd
 oFD
 oKB
 opcodes
+organization
 Byte
 Buffer
 Bit
@@ -6991,6 +7009,8 @@ BTFX
 BVo
 Bax
 Bdp
+Basic
+Block
 XD
 Xk
 XU
